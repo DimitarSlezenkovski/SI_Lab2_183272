@@ -10,17 +10,17 @@ import java.util.List;
 class SILab2Test {
 
     private SILab2 siLab2 = new SILab2();
-    private static User user1 = null; //EPC, //EBC
-    private static User user2 = new User("Dimitar",null,"asd@gmail.com");//EPC
-    private static User user3 = new User("Dimitar","dimitar","dsa@gmail.com");//EPC
-    private static User user4 = new User("Dimitar","asdf","");//EPC
-    private static User user5 = new User("Dimitar","Sl3z#nkovsk1","p!ck1eR!ck@gmail.com");//EPC
-    private static User user6 = new User("Dimitar","Sl3z3nkovsk1","john@gmail.com"); //EPC
-    private static User user7 = new User("Dimitar","asdf12","asdf@gmail.com");
-    private static User user8 = new User("Dimitar","dimitar","haos@gmail.com");
-    private static User user9 = new User("Dimitar","Pa2$Wor|)","nesumodtuka@gmail.com");
-    private static User user10 = new User("Dimitar","1234SADF","");
-    private static User user11 = new User("Dimitar","AWDFA1a","");
+    private static User user1 ;
+    private static User user2 ;
+    private static User user3 ;
+    private static User user4 ;
+    private static User user5 ;
+    private static User user6 ;
+    private static User user7 ;
+    private static User user8 ;
+    private static User user9 ;
+    private static User user10;
+    private static User user11;
     private static List<String> users;
     private static List<String> users2;
 
@@ -28,13 +28,20 @@ class SILab2Test {
     public static void init() {
         System.out.println("Initializing the expected paramethars ");
 
+        user1 = null; //EPC, //EBC
+        user2 = new User("Dimitar",null,"asd@gmail.com");//EPC
+        user3 = new User("Dimitar","dimitar","dsa@gmail.com");//EPC
+        user4 = new User("Dimitar","asdf","");//EPC
+        user5 = new User("Dimitar","Pa2$Wor|)","p!ck1eR!ck@gmail.com");//EPC
+        user6 = new User("Dimitar","Sl3z3nkovsk1","john@gmail.com"); //EPC
+        user7 = new User("Dimitar","asdf12","asdf@gmail.com");
+        user8 = new User("Dimitar","dimitar","haos@gmail.com");
+        user9 = new User("Dimitar","Slezenkovsk1","nesumodtuka@gmail.com");
+        user10 = new User("Dimitar","1234SADF","");
+        user11 = new User("Dimitar","AWDFA1a","");
+
         users = new ArrayList<>(11);
         users2 = new ArrayList<>(5);
-        users2.add("Johnny");
-        users2.add("Marineh");
-        users2.add("John");
-        users2.add("Simone");
-        users2.add("Bravo");
     }
     @AfterAll
     public static void destroy() {
@@ -56,7 +63,7 @@ class SILab2Test {
                 () -> assertFalse(siLab2.function(user6, users)),
                 () -> assertFalse(siLab2.function(user7, users)),
                 () -> assertFalse(siLab2.function(user8, users)),
-                () -> assertTrue(siLab2.function(user9, users)),
+                () -> assertFalse(siLab2.function(user9, users)),
                 () -> assertFalse(siLab2.function(user10, users)),
                 () -> assertFalse(siLab2.function(user11, users))
         );
@@ -76,7 +83,7 @@ class SILab2Test {
                 () -> assertFalse(siLab2.function(user6, users)),
                 () -> assertFalse(siLab2.function(user7, users)),
                 () -> assertFalse(siLab2.function(user8, users)),
-                () -> assertTrue(siLab2.function(user9, users)),
+                () -> assertFalse(siLab2.function(user9, users)),
                 () -> assertFalse(siLab2.function(user10, users)),
                 () -> assertFalse(siLab2.function(user11, users))
         );

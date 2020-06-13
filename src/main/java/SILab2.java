@@ -28,8 +28,8 @@ public class SILab2 {
 
     public boolean function (User user, List<String> allUsers) {
         String specialCharacters="!#$%&'()*+,-./:;<=>?@[]^_`{|}";
-        if (user==null) {
-            throw new RuntimeException("The user is not instantiated");
+        if (user==null) {//А
+            throw new RuntimeException("The user is not instantiated"); //Б
         }
         if (user.getUsername()==null || user.getPassword()==null)
             throw new RuntimeException("The user is missing some mandatory information");
