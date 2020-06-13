@@ -7,7 +7,7 @@
 
 * Control Flow Graph
 
-![CFG](ControlFlowGraph.jpg)
+![CFG](CFG.jpg)
 
 
 * Цикломатска комплексност
@@ -19,7 +19,7 @@
 Табелата за овој критериум може да ја најдете во репото под име EBC.xlsx. 
 Има вкупно 11 тест случаи според овој критериум.
 
-![Every Branch Criteria](EBC.JPG)
+![Every Branch Criteria](EBC.jpg)
 
 * Тест случаи според критериумот **Every Path**
 
