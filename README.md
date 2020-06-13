@@ -19,7 +19,7 @@
 Табелата за овој критериум може да ја најдете во репото под име EBC.xlsx. 
 Има вкупно 11 тест случаи според овој критериум.
 
-![Every Branch Criteria](EBC.jpg)
+![Every Branch Criteria](EveryBranchC.jpg)
 
 * Тест случаи според критериумот **Every Path**
 
